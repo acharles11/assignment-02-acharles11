@@ -1,0 +1,348 @@
+
+@font-face {
+    font-family: 'milkshakeregular';
+    src: url('milkshake-webfont.woff2') format('woff2'),
+         url('milkshake-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Color Palette
+Tan - #f5e7cd
+Mango - #daa03d
+Red - #c6552c */
+
+html {
+    font-size: 62.5%;
+}
+
+/*mobile first css*/
+
+body  {
+	font-family: 'Arial', Helvetica, sans-serif;
+    font-size: 1.6rem;
+    background-color: #171816;
+}
+
+.inner-container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/*header*/
+
+header,
+footer {
+    padding: 1.6rem;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+	font-family: 'milkshakeregular';
+	font-size: 3.2rem;
+}
+
+.toggle-btn {
+	border: none;
+	background: #171816;
+	outline: none;
+	width: 12%;
+}
+
+.toggle-btn:hover {
+	cursor: pointer;
+}
+
+header a {
+	color: #f5e7cd;
+	text-decoration: none;
+	display: block;
+}
+
+header nav {
+	position: absolute;
+    left: 0;
+    background-color: #171816;
+    width: 100vw;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+.show-nav {
+	max-height: 40rem;
+}
+
+.links {
+	font-family: 'B612', sans-serif;
+	display: flex;
+	padding-top: 3rem;
+	padding-left: 1.6rem;
+}
+
+.links a:hover {
+	color: #c6552c;
+}
+
+.links svg {
+	padding-right: 1rem;
+	width: 12%;
+}
+
+nav hr {
+	border-color: #f5e7cd;
+	margin-left: 1.6rem;
+	margin-right: 1.6rem;
+}
+
+.buttons {
+	font-family: 'B612', sans-serif;
+	display: flex;
+}
+
+.buttons a {
+	border: 1px solid #f5e7cd;
+	padding: 1rem;
+	text-decoration: none;
+	margin-left: 1.6rem;
+	margin-top: 1rem;
+	margin-bottom: 4rem;
+}
+
+.buttons a:hover {
+	background-color: #daa03d;
+	color: #171816;
+}
+
+/*main*/
+
+.bg-img {
+	background: url(../img/small-typewriter.jpg) center bottom / cover no-repeat;
+}
+
+.bg-color {
+	background-color: rgba(23, 24, 22, 0.52);
+	padding-left: 1.6rem; 
+	padding-right: 1.6rem;
+	padding-top: 5rem;
+}
+
+.box-color { 
+	background-color: #daa03d;
+	text-align: center;
+	padding-left: 1.6rem; 
+	padding-right: 1.6rem;
+	padding-top: 4.2rem; 
+	padding-bottom: 4.2rem; 
+}
+
+.box-color h2 {
+	font-family: 'milkshakeregular';
+	font-size: 3.9rem;
+	color: #171816;	
+}
+
+.box-color hr {
+	border-color: #c6552c;
+	width: 6%;
+}
+
+.box-color p {
+	color: #171816;
+	padding-top: 2rem; 	
+}
+
+.article h3,
+.guides h3 {
+	font-weight: 800;
+	color: #c6552c;
+}
+
+.article h4,
+.guides h4 {
+	font-family: 'milkshakeregular';
+	font-size: 3rem;
+}
+
+.article {
+	padding-top: 8rem;
+	padding-bottom: 8rem;
+	padding-left: 1.6rem;
+	padding-right: 1.6rem;
+	color: #f5e7cd;
+}
+
+.article p {
+	padding-top: 3rem;
+	padding-bottom: 3.5rem;
+}
+
+.article a {
+	border-top: 1px solid #f5e7cd;
+	border-bottom: 1px solid #f5e7cd;
+	color: #f5e7cd;
+	padding: 1.5rem;
+	text-decoration: none;
+}
+
+.article a:hover {
+	background-color: #daa03d;
+	color: #171816;
+	border: hidden;
+}
+
+.guides {
+	background-color: #daa03d;
+	padding-top: 2rem;
+	padding-bottom: 8rem;
+	color: #f5e7cd;
+}
+
+.guides-img {
+	background: url(../img/small-studying.jpg) center bottom / cover no-repeat;
+	height: 37.5rem;
+}
+
+.guides ul {
+	color: #171816;
+	padding-bottom: 2rem;
+}
+
+.guides a {
+	border-top: 1px solid #c6552c;
+	border-bottom: 1px solid #c6552c;
+	color: #171816;
+	padding: 1.5rem;
+	text-decoration: none;
+	margin-left: 1.6rem;
+}
+
+.guides a:hover {
+	background-color: #171816;
+	color: #f5e7cd;
+	border: hidden;
+}
+
+.guides-color {
+	position: relative;
+	top: 5.5rem;
+	background-color: #1d1e1c;
+	margin-left: 1.6rem;
+	margin-right: 1.6rem;
+	padding: 1.6rem;
+}
+
+.box-color p,
+.article p,
+.article a,
+.guides ul,
+.guides a {
+	font-family: 'B612', sans-serif;
+}
+
+/*footer*/
+
+footer {
+	background: url(../img/black-felt.png) center bottom / cover no-repeat;
+	text-align: right;
+}
+
+h5 {
+	font-size: 7rem;
+	font-weight: 800;
+	color: #171816;
+	margin: 0 auto;
+	padding-top: 2rem;
+}
+
+footer p {
+	font-family: 'B612', sans-serif;
+	font-style: italic;
+	font-size: 1.4rem;
+	color: #f5e7cd;
+	padding-top: 1.5rem;
+	padding-bottom: 3rem;
+}
+
+@media only screen and (min-width: 1300px) {
+
+	.toggle-btn,
+	nav hr {
+        display: none;
+    }
+
+    header nav {
+    	display: flex;
+        position: static;
+        width: auto;
+        overflow: visible;
+    }
+
+    .menu,
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu {
+    	position: relative;
+    	top: 1rem;
+    	max-width: 80rem;
+    	align-items: center;
+    }
+
+    .links svg {
+		width: 13%;
+	}
+
+    .buttons {
+    	position: relative;
+    	bottom: 1rem;
+    }
+
+	.bg-img {
+		background: url(../img/large-typewriter.jpg) center bottom / cover no-repeat;
+	}
+
+	.box-color { 
+		width: 32%;
+		padding-top: 6rem;
+		padding-bottom: 6rem;
+		position: relative;
+		top: 8rem;
+		left: 18rem;
+	}	
+
+	.article {
+		width: 45%;
+		margin-left: 62rem;
+	}
+
+	.guides-color {
+		width: 45%;
+	}
+
+	.guides-flex {
+		display: flex;
+	}
+
+	.guides-img {
+		background: url(../img/large-studying.jpg) center bottom / cover no-repeat;
+		width: 56.6rem;
+	}
+
+	.guides-ul {
+		position: relative;
+		top: 5rem;
+		left: 5rem;
+	}
+
+	h5 {
+		font-size: 17rem;
+	}	
+}
